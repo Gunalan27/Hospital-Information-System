@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>LoginForm</title>
+<link rel = "stylesheet" type = "text/css" href="css/bootstrap-3.4.1-dist/css/bootstrap.css"/>
+<script type="text/javascript">
+    function validate()
+    {
+    var username = document.login.username.value;
+    var password = document.login.password.value;
+ 
+    if (username==null || username=="")
+    {
+      alert("Username can't be blank");
+      return false;
+    }
+    else if (password==null || password=="")
+    {
+      alert("password can't be blank");
+      return false;
+    }
+    }
+</script>
+</head>
+<body style="background-image: url('images/background1.png');">
+   <div class="container-fluid" style="text-align: center;">
+   <br><br>
+    <div class="row">
+       <div class="col-md-6" >
+         <div class="panel-heading">
+              <img src="images/log.png" alt="">
+            </div>           
+            <div class="panel-body" style="text-align: center;font-size: larger;">
+              <form name="login" method="post" action="login.php" onsubmit="return validate();" >
+                <div class="form-group"><img src="images/user.png" alt="">
+                  <input type="text"placeholder="Username" style="height: 1cm;width: 7cm; size: 2px;" name="username"  /> </div>
+                <br>
+                <div class="form-group"><img src="images/pass.png" alt="">
+                  <input type="password" placeholder="password" style="height: 1cm;width: 7cm; size: 2px;" name="password" /> </div>
+                 <input type="checkbox" style="text-align: left;">  Remember me
+                 <br>
+                 <br>
+                  <div><input type="submit" style="border-radius: 12px; height:1cm;width: 2cm;color: rgb(255, 255, 255); background-color: rgb(48, 45, 202);" value="Login"></input>
+                   <input type="reset" style="border-radius: 12px; height:1cm;width: 2cm;color: rgb(255, 255, 255); background-color: rgb(48, 45, 202);" value="Reset"></input></div>
+                 <br>   <h4 ><a href="forget.html" style="color: rgb(53, 0, 151);">Forget password?</a></h4>
+              </form>
+            </div>        
+           </div>       
+      </div>
+      <div class="col-sm-3">
+  
+      </div>
+    </div>
+  </div> 
+</body>
+</html>

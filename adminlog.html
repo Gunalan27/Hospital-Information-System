@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>adminlog</title>
+<link rel = "stylesheet" type = "text/css" href="css/bootstrap-3.4.1-dist/css/bootstrap.css"/>
+<script type="text/javascript">
+    function validate()
+    {
+    var username = document.login.username.value;
+    var password = document.login.password.value; 
+    if (admin==null || admin=="")
+    {
+      alert("Username can't be blank");
+      return false;
+    }
+    else if (password==null || password=="")
+    {
+      alert("password can't be blank");
+      return false;
+    }
+    }
+</script>
+</head>
+<body >
+  <div class="container-fluid" style="text-align: center;">
+    <div style="text-align:right;">
+      <a href="home.html"><button class="btn btn-primary">GO TO HOME</button></a>
+      <a href="admin.html"><button class="btn btn-primary">LOGOUT</button></a>
+      </div>
+   <br><br>
+    <div class="row">      
+      <div class="col-md-6" >
+            <div class="panel-heading">
+              <img src="images/log.png" alt="">
+              </div>
+            <div class="panel-body" style="text-align: center;font-size: larger;">
+              <form name="login" method="post" action="adlog.php" onsubmit="return validate();" >
+                <div class="form-group"><img src="images/user.png" alt="">
+                  <input type="text"placeholder="Admin" style="height: 1cm;width: 7cm; size: 2px;" name="admin"  /> </div>
+                <br>
+                <div class="form-group"><img src="images/pass.png" alt="">
+                  <input type="password" placeholder="password" style="height: 1cm;width: 7cm; size: 2px;" name="password" /> </div>
+                 <input type="checkbox" style="text-align: left;">  Remember me
+                 <br>
+                 <br>
+                  <div><input type="submit" style="border-radius: 12px; height:1cm;width: 2cm;color: rgb(255, 255, 255); background-color: rgb(48, 45, 202);" value="Login"></input>
+                   <input type="reset" style="border-radius: 12px; height:1cm;width: 2cm;color: rgb(255, 255, 255); background-color: rgb(48, 45, 202);" value="Reset"></input></div>
+              </form>
+            </div>        
+           </div>       
+      </div>
+      <div class="col-sm-3">  
+  </div>
+  </div> 
+</body>
+</html>

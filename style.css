@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+.width-100{
+    width: 100%;
+    border:1px solid black ;
+float: left;
+height: auto;
+    
+}
+.width-101{
+    width: 100%;
+    border:1px solid black ;
+float: left;
+height: auto;
+background-image: url('images/head.png');
+    
+}
+.width-50{
+    width: 50%;
+    border: 1px solid black;
+    float: left;
+    height: auto;
+    
+}
+.width-30{
+    width: 30%;
+    border: 1px solid black;
+    float: right;
+    
+}
+.width-70{
+    width: 70%;
+    border: 1px solid black;
+    float: left;
+    height: auto;
+    
+}
+.width-33{
+    width: 33%;
+    border: 1px solid black;
+    float: left;
+    height: auto;
+    
+}
+
+.menu{
+    padding: 6mm;
+    float: left;
+    color: beige;
+}
+.menu1{
+    padding: 6mm;
+    padding: top 3mm;
+    float: right;
+    color: beige;
+}
+.img{
+    height: 50px;
+    width: auto;
+    
+}
+.img1{
+    height: 200px;
+    width: auto;
+}
+.logo{
+    height: 50px;
+    width: auto;
+}
+.h1{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 4cm;
+}
+.p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head{
+    float: left;
+
+
+}
+.button{
+    
+    
+    background-color: rgb(62, 19, 102);
+    text-align: center;
+    color:whitesmoke ;
+    font-size: 30px;
+
+    
+}
+.h12{
+    color: chocolate;
+}
+.content1{
+    color: rgb(139, 139, 136);
+    font-size: larger;
+    padding-left: 5mm;
+    padding-right: 5mm;
+}

@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>LoginForm</title>
+<link rel = "stylesheet" type = "text/css" href="css/bootstrap-3.4.1-dist/css/bootstrap.css"/>
+<script type="text/javascript">
+    function validate()
+    {
+    var username = document.login.username.value;
+    var password = document.login.password.value; 
+    if (name==null || name=="")
+    {
+      alert("Username can't be blank");
+      return false;
+    }
+    if (email==null || email=="")
+    {
+      alert("email can't be blank");
+      return false;
+    }
+    else if (phone==null || phone=="")
+    {
+      alert("phone number can't be blank");
+      return false;
+    }
+    }
+</script>
+</head>
+<body style="background-image: url('images/background1.png');">
+  <div class="container-fluid" style="text-align: center;">
+   <br><br>
+    <div class="row">      
+      <div class="col-md-6" >
+            <div class="panel-heading">
+              <img src="images/log.png" alt="">
+            </div>
+            <div class="panel-body" style="text-align: center;font-size: larger;">
+              <form name="login" method="post" action="log.php" onsubmit="return validate();" >
+                <div class="form-group"><img src="images/user.jpg" alt="">
+                  <input type="text"placeholder="Name" style="height: 1cm;width: 7cm; size: 2px;" name="name"  /> </div>
+                <br>
+                <div class="form-group"><img src="images/phone.png" alt="">
+                  <input type="text" placeholder="Phone" style="height: 1cm;width: 7cm; size: 2px;" name="phone" /> 
+                </div>
+                <br>
+                <div><img src="images/email.png">
+                   <input type="text" placeholder="Email" style="height: 1cm;width: 7cm; size: 2px;" name="email" /> 
+                </div>
+                 <br>
+                 <br>
+                  <div><input type="submit" style="border-radius: 12px; height:1cm;width: 2cm;color: rgb(255, 255, 255); background-color: rgb(48, 45, 202);" value="Login"></input>
+                   <input type="reset" style="border-radius: 12px; height:1cm;width: 2cm;color: rgb(255, 255, 255); background-color: rgb(48, 45, 202);" value="Reset"></input></div>
+               </form>
+            </div>        
+           </div>       
+      </div>
+      <div class="col-sm-3">  
+      </div>
+   </div>
+  </div> 
+</body>
+</html>

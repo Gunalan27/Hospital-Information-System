@@ -1,0 +1,86 @@
+<head>
+    <link rel="stylesheet" href="css/bootstrap-3.4.1-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-6">
+           <h2 style="text-align: center;color: 	#0080ff;"><b>GET APPOINTMENT</b></h2>   
+        </div>
+        <div class="col-sm-6">
+            <h2 style="text-align: center;color: 	#0080ff;"><b>ABOUT DOCTERS</b></h2>
+         </div>
+        <div class="container" >
+            <div class="col-sm-5">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1> Fill below Details to get appointment</h1>
+                        <img src="images/de.jpg" style="height: 5cm; width: 11cm;" alt="">
+                     </div>
+                    <div class="panel-body">
+                        <form action="conn.php" method="post">
+                            <div class="form-group">
+                                <label for="name"> Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>                         
+                            <div>
+                                <label for="gender">Gender</label><br>        
+                               <label for="male" class="radio-inline"><input type="radio" name="gender" value="male" id="male">Male</label>
+                               <label for="female" class="radio-inline"><input type="radio" name="gender" value="female" id="female">female</label>
+                              <label for="others" class="radio-inline"><input type="radio" name="gender" value="others" id="others">Others</label>
+                            </div>
+                            <div>
+                                <label for="age"> Age</label>
+                                <input type="text" class="form-control" id="age" name="age" required>
+                            </div>                           
+                          <div>
+                              <label for="email"> EMail</label>
+                              <input type="text" class="form-control" id="email" name="email" required>
+                          </div>                          
+                          <div>
+                              <label for="phone"> Phone</label>
+                              <input type="text" class="form-control" id="phone" name="phone"required>
+                          </div>
+                       <br>
+                          <div>
+                            <label for="doctor">Doctor</label><br>        
+                           <label for="d1" class="radio-inline"><input type="radio" name="doctor" value="Vanitha" id="d1">Vanitha</label>
+                           <label for="d2" class="radio-inline"><input type="radio" name="doctor" value="Sathya" id="d2">Sathya</label>
+                        </div>
+                            <div class="form-group">
+                                <label for="Date"> Date</label>
+                                <input type="date" value="dat" name="dat">
+                            </div>        
+                            <div class="form-group">
+                                <label for="Time"> Time</label>
+                                <select name="tim" id="tim">
+                                    <option value="10.00am">10.00am</option>
+                                    <option value="10.30am">10.30am</option>
+                                    <option value="11.00am">11.00am</option>
+                                    <option value="3.00pm">3.00pm</option>
+                                    <option value="3.30pm">3.30pm</option>
+                                    <option value="4.00pm">4.00pm</option>
+                                    <option value="4.30pm">4.30pm</option>
+                               </select>                                
+                            </div>
+                            <div>
+                              <input type="submit" class="btn btn-primary" value="submit" name="submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer" style="text-align: right;">
+                       <small>&copy;ucet bank</small> 
+                    </div>
+                </div>
+            </div>   
+            <div class="col-sm-7">
+                <div class="row">
+                    <div ><img src="images/2.jpeg" style="width: 20cm;height: 8cm;"></div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6"><img src="images/d1.jpg"  alt="">VANITHA R MBBS DENTIST</div>
+                  <div class="col-sm-6"><img src="images/d8.jpg" alt="">SATHYA B MBBS DENTIST</div>
+                </div>              
+            </div>   
+        </div>     
+</body>
+
